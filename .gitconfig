@@ -1,7 +1,7 @@
-[user]
-	name = mmmdv7z
-	email = mammadovthenull@gmail.com
-[core]
-	editor = vim
 [init]
 	defaultBranch = master
+[user]
+	email = mammadovthenull@gmail.com
+	name = mmmdv7z
+[core]
+	editor = vim
