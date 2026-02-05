@@ -1,7 +1,7 @@
 [init]
 	defaultBranch = master
 [user]
-	email = mammadovthenull@gmail.com
+	email = stiermid@tuta.io
 	name = Agil Mammadov
 [core]
 	editor = vim
