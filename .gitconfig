@@ -1,7 +1,12 @@
 [init]
 	defaultBranch = master
 [user]
-	email = stiermid@tuta.io
+	email = mammadovagil@proton.me
 	name = Agil Mammadov
 [core]
 	editor = vim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
