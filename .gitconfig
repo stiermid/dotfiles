@@ -3,6 +3,7 @@
 [user]
 	email = mammadovagil@tutamail.com
 	name = Agil Mammadov
+	signingkey = B70C4C90BF5E4DE6
 [core]
 	editor = vim
 [filter "lfs"]
@@ -10,3 +11,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
