@@ -8,3 +8,7 @@ set shiftwidth=4
 set tabstop=4
 set smartindent
 
+" Keymaps
+let mapleader = " "
+nnoremap <leader>e :Ex<CR>
+
