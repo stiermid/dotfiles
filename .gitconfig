@@ -5,7 +5,7 @@
 	name = Agil Mammadov
 	signingkey = B70C4C90BF5E4DE6
 [core]
-	editor = vim
+	editor = nvim
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
