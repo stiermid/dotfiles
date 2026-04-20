@@ -51,5 +51,5 @@ fi
 
 "$twm" &
 "$xclock" -geometry 50x50-1+1 &
-xcompmgr -r 0 -o 0 -l 0 -t 0 -I 0 -O 0 -D 0 -a -c -C
+xcompmgr -r 0 -o 0 -l 0 -t 0 -I 0 -O 0 -D 0 -a -c -C &
 exec dbus-run-session i3
