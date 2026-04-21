@@ -41,6 +41,9 @@ exec --no-startup-id nm-applet
 # Toggle between US and AZ layouts using Alt+Shift
 exec --no-startup-id setxkbmap -layout us,az -option grp:win_space_toggle
 
+# Set bg
+exec_always feh --bg-fill ~/.config/wall.png
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_SINK@ toggle
