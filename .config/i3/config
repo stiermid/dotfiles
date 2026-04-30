@@ -19,6 +19,15 @@ font pango:JetBrainsMonoNerdFont Medium 11
 default_border pixel 1
 default_floating_border pixel 1
 
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/pics/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/pics/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/pics/$(date)"
+
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
