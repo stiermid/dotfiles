@@ -16,3 +16,6 @@ XTerm*selectToClipboard: true
 XTerm*VT100.Translations: #override \
     Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
     Shift Ctrl <Key>V: insert-selection(CLIPBOARD)
+
+! Fix Backspace sending ^H
+XTerm*backarrowKey: false
