@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup({
-				ensure_installed = { 'lua_ls', 'ruff'}
+				ensure_installed = { 'lua_ls', 'ruff', 'jedi_language_server'}
 			})
 		end
 	},
@@ -27,9 +27,11 @@ return {
 			})
 
 			vim.lsp.config('ruff', {})
+			vim.lsp.config('jedi_language_server', {})
 
 			vim.lsp.enable('lua_ls')
 			vim.lsp.enable('ruff')
+			vim.lsp.enable('jedi_language_server')
 
 			-- keymaps
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
