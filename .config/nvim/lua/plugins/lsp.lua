@@ -9,7 +9,7 @@ return {
 		'williamboman/mason-lspconfig.nvim',
 		config = function()
 			require('mason-lspconfig').setup({
-				ensure_installed = { 'lua_ls', 'pyright', 'ts_ls'}
+				ensure_installed = { 'lua_ls', 'ruff'}
 			})
 		end
 	},
@@ -26,12 +26,10 @@ return {
 				}
 			})
 
-			vim.lsp.config('pyright', {})
-			vim.lsp.config('ts_ls', {})
+			vim.lsp.config('ruff', {})
 
 			vim.lsp.enable('lua_ls')
-			vim.lsp.enable('pyright')
-			vim.lsp.enable('ts_ls')
+			vim.lsp.enable('ruff')
 
 			-- keymaps
 			vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
