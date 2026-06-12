@@ -49,7 +49,10 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-"$twm" &
-"$xclock" -geometry 50x50-1+1 &
+pipewire &
+pipewire-pulse &
+wireplumber &
+
+xrandr --output eDP --set "TearFree" on
 xcompmgr &
 exec dbus-run-session i3
