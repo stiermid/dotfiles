@@ -14,6 +14,7 @@ cd ~/dotfiles
 Symlink whatever you want:
 ```sh
 stow zsh nvim vim ...
+stow etc -t /etc/
 ```
 
 ## Notes
