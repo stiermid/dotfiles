@@ -4,28 +4,16 @@ My personal configuration files, managed with [GNU Stow](https://www.gnu.org/sof
 
 ## Setup
 
-### Prerequisites
-
-- [GNU Stow](https://www.gnu.org/software/stow/) — `pacman -S stow`
-
-### Install
-
 Clone the repo into your home directory:
+
 ```sh
 git clone https://github.com/stiermid/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-Symlink everything with Stow:
+Symlink whatever you want:
 ```sh
-stow .
-```
-
-This creates symlinks from `~` pointing into `~/dotfiles`, so your tools pick up the configs automatically.
-
-### Uninstall
-```sh
-stow -D .
+stow zsh nvim vim ...
 ```
 
 ## Notes
