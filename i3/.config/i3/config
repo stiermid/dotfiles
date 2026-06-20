@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:JetBrainsMonoNerdFont Medium 11
+font pango:JetBrainsMono Medium 11
 
 # Audio control applet
 exec --no-startup-id pasystray
