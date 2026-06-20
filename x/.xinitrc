@@ -53,6 +53,9 @@ pipewire &
 pipewire-pulse &
 wireplumber &
 
+# disable bell
+xset b off
+
 xrandr --output eDP --set "TearFree" on
 xcompmgr &
 exec dbus-run-session i3
