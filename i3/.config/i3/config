@@ -17,6 +17,8 @@ font pango:JetBrainsMono Medium 11
 
 # Audio control applet
 exec --no-startup-id pasystray
+exec gentoo-pipewire-launcher &
+
 #
 default_border pixel 1
 default_floating_border pixel 1

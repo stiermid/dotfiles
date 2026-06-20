@@ -49,10 +49,6 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-pipewire &
-pipewire-pulse &
-wireplumber &
-
 # disable bell
 xset b off
 
