@@ -3,7 +3,7 @@
 [user]
 	email = mammadovagil@proton.me
 	name = Agil Mammadov
-	signingkey = B70C4C90BF5E4DE6
+	signingkey = 7934F07373543B9F78D8B0FDB70C4C90BF5E4DE6
 [core]
 	editor = nvim
 [filter "lfs"]
