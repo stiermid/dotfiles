@@ -49,8 +49,6 @@ if [ -d "$xinitdir"/xinitrc.d ] ; then
 	unset f
 fi
 
-# disable bell
-xset b off
 
 xrandr --output eDP --set "TearFree" on
 xcompmgr &
